@@ -1,1 +1,23 @@
-TODO - add a form here for creating an email
+Write an email
+
+
+ <%= form_for :email ,url: email_contacts_path(@contact.id), method: "post" do |f|%>
+    <%= f.label :subject, placeholder: "Subject"%>
+  <%= f.text_area :body, placeholder: "Email Message" %>
+  <%= f.submit %>
+<% end %>
+
+
+
+<!-- # # => <input id="user_address" name="user[address]" type="email" />
+
+<form action="/countries" method="post">
+    <input class = "form-control" type="text" name="place" placeholder="Enter Your email"></input><br>
+    <input class = "form-control" type="text" name="place" placeholder="Subject"></input><br>
+    <textarea placeholder="Enter the body of the email" ></textarea><br>
+
+    
+  
+<br>
+    </form>
+<
